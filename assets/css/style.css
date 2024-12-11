@@ -17648,7 +17648,6 @@ input[type=checkbox]:checked + label:after {
           justify-content: flex-start;
 position: relative;
 }
-
 .slide-inner.bg-height {
   min-height: 785px;
 }
@@ -20713,8 +20712,25 @@ position: relative;
   text-decoration: underline; 
 }
 
+.director .h3 {
+    font-weight: 600;
+   }
 
+ .director p {
+    line-height: 38px;
+  }
+
+  #director .flright .paddadj {
+    padding: 4px;
+  }
   
+  .section-title2{
+    color: #FF5E13;
+    padding-top: 50px;
+    justify-items: center;
+    font-weight: 900;
+    text-decoration: underline; 
+  }
   
   
   
