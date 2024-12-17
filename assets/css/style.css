@@ -17291,10 +17291,10 @@ input[type=checkbox]:checked + label:after {
    vertical-align: middle;
   font-family: "Rajdhani", sans-serif;
     font-size: 22px;
-  color: black;
+  color:#198754 ;
   line-height: 1;
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 900;
 
 }
 .header-top-left {
@@ -20772,7 +20772,7 @@ position: relative;
     font-weight: 900;
     text-decoration: underline; 
   }
-
+ 
 
   
   
