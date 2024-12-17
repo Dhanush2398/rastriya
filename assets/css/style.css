@@ -139,8 +139,8 @@ body {
   display: none;
 }
 .goog-te-gadget-simple {
-  background-color: #000 !important;
-  color: #fff !important;
+  background-color: #F29F58!important;
+  color: black !important;
   padding: 0px 0px;
 
 }
@@ -150,7 +150,7 @@ body {
   /* position: fixed;
   right: 40px;
   top: 30px; */
-  color: #fff !important;
+  color: black!important;
 }
 .goog-te-gadget-simple {
   border-left: 1px solid #9b9b9b !important;
@@ -161,7 +161,7 @@ body {
   padding-bottom: 0px !important;
 }
 .goog-te-gadget-simple .VIpgJd-ZVi9od-xl07Ob-lTBxed {
-  color: #fff !important;
+  color: black !important;
   font-size: 10px !important;
   padding: 0 !important;
 }
@@ -20772,7 +20772,8 @@ position: relative;
     font-weight: 900;
     text-decoration: underline; 
   }
- 
+
+
   
   
   
