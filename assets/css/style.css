@@ -169,7 +169,7 @@ body {
   display: none;
 }
 .g-translate{
-  background-color:#ff5e13 ;
+  background-color:white ;
   padding: 4px 8px 4px 0;
 }
 /* ************************* */
@@ -17291,7 +17291,7 @@ input[type=checkbox]:checked + label:after {
    vertical-align: middle;
   font-family: "Rajdhani", sans-serif;
     font-size: 22px;
-  color: #fff;
+  color: black;
   line-height: 1;
   margin-bottom: 0;
   font-weight: 600;
@@ -17351,18 +17351,18 @@ input[type=checkbox]:checked + label:after {
   font-weight: 600;
 }
 .header-top-right ul li.login-info a span {
-  color: #e5e5e5;
+  color: black;
   font-weight: 500;
 }
 .header-top-right ul li .minicart-count img {
   margin-right: 15px;
 }
 .header-top-right ul li .minicart-count span.quantity {
-  background-color: #00225a;
+  background-color:white;
   border-radius: 100%;
   text-align: center;
   font-size: 14px;
-  color: #fff;
+  color: black;
   display: block;
   width: 20px;
   height: 20px;
@@ -17393,6 +17393,7 @@ input[type=checkbox]:checked + label:after {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+          
 }
 .main-nav > ul > li {
   display: inline-block;
@@ -17431,7 +17432,7 @@ input[type=checkbox]:checked + label:after {
 .main-nav > ul > li > a {
   font-family: "Rajdhani", sans-serif;
   font-weight: 600;
-  color: #fff;
+  color: black;
   display: block;
   padding-top: 30px;
   padding-bottom: 30px;
