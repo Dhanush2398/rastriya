@@ -20773,7 +20773,10 @@ position: relative;
     text-decoration: underline; 
   }
  
-
+  .director_icon img{
+    height: 250px;
+    width: 200px;
+  }
   
   
   
