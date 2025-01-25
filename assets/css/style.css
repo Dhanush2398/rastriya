@@ -21011,8 +21011,6 @@ position: relative;
   padding: 20px;
 }
 
-
-
 .director_icon {
   background: #fff;
   border-radius: 12px;
@@ -21021,7 +21019,6 @@ position: relative;
   width: 250px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
-
 }
 
 .director_icon:hover {
