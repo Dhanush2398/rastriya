@@ -21048,26 +21048,3 @@ position: relative;
   color: #FF5E13;
 }
 
-
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-    gap: 15px;
-  }
-
-  .director_icon {
-    width: 100%;
-  }
-
-  .director_icon img {
-    max-width: 100%;
-  }
-
-  .director_icon h3 {
-    font-size: 1rem;
-  }
-
-  .director_icon p {
-    font-size: 0.9rem;
-  }
-}
