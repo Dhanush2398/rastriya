@@ -20774,9 +20774,16 @@ position: relative;
   }
  
   .director_icon img{
-    height: 250px;
+    height: 290px;
     width:100%;
   }
+  
+  @media (max-width: 768px) {
+    .director_icon img {
+      height: 350px;
+    }
+  }
+
 
   .accordion {
     background-color: white;
