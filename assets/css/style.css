@@ -21005,7 +21005,7 @@ position: relative;
 }
 
 
-.container1 {
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
@@ -21021,6 +21021,7 @@ position: relative;
   width: 250px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: center;
+
 }
 
 .director_icon:hover {
