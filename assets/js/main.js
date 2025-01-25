@@ -764,4 +764,21 @@
     $('a[href="#"]').on('click', function (e) {
         e.preventDefault ? e.preventDefault() : (e.returnValue = false);
     });
+      // Get all accordion buttons
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach((accordion) => {
+    accordion.addEventListener("click", function () {
+      // Toggle the active class
+      this.classList.toggle("active");
+
+      // Toggle the panel visibility
+      const panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  });
 })(jQuery);
