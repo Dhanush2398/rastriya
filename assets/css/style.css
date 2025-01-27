@@ -17153,9 +17153,7 @@ blockquote .user-name:after {
 }
 
 /* ---Skudmart Custom Input Checkbox--- */
-input[type=checkbox] {
-  display: none;
-}
+
 
 input[type=checkbox] + label {
   position: relative;
