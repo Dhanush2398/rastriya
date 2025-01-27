@@ -17399,11 +17399,11 @@ input[type=checkbox]:checked + label:after {
   display: inline-block;
 }
 .main-nav > ul > li:not(:last-child) {
-  padding-right: 55px;
+  padding-right:20px;
 }
 @media (max-width: 1199px) {
   .main-nav > ul > li:not(:last-child) {
-    padding-right: 30px;
+    padding-right: 10px;
   }
 }
 .main-nav > ul > li.separator {
@@ -21052,5 +21052,25 @@ position: relative;
   margin: 5px 0;
   font-size: 1rem;
   color: #FF5E13;
+}
+
+
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FF5E13; 
+  color: #fff;               
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;       
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+button:hover {
+  background-color: #198754; 
+  transform: scale(1.05);     
 }
 
