@@ -21186,11 +21186,96 @@ button:hover {
   color: #f0f0f0;
 }
 
-
-
-
 @media (max-width: 1023px) {
   .sticky {
     display: none;
   }
+}
+/* Full-screen overlay */
+.full-screen {
+  width: 100vw;
+  height: 100vh;
+  background: url('/assets/images/15.jpg') no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Popup box */
+.popup {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.8);
+  max-width: 650px;
+  width: 85%;
+  transform: scale(0.95);
+  transition: transform 0.3s ease-in-out;
+}
+
+.popup:hover {
+  transform: scale(1); /* Smooth scale-up effect on hover */
+}
+
+/* Logo image */
+.popup img {
+  max-width: 120px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 3px solid #fff; /* Circular border around the logo */
+}
+
+/* Heading */
+.popup h1 {
+  font-size: 32px;
+  color: #FF5E13; 
+  font-family: 'Helvetica Neue', sans-serif;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.popup h3.festival-name {
+  font-size: 26px;
+  color: #00864B; 
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif;
+  font-weight: 700;
+}
+
+
+.popup p {
+  font-size: 18px;
+  color: #dcdcdc;
+  line-height: 1.6;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+
+.popup button {
+  background: #FF5E13;
+  color: #f0f0f0;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 30px;
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.popup button:hover {
+  background: #00864B;
+  color: white;
+  transform: translateY(-3px); 
+}
+
+.popup button:active {
+  transform: translateY(3px); 
 }
