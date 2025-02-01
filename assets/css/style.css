@@ -17661,7 +17661,9 @@ input[type=checkbox]:checked + label:after {
   left: 0;
   width: 100%;
   display: block;
+  height: 200px;
 }
+
 .sticky .header-logo-wrap {
   top: 0;
   height: 100%;
@@ -17729,15 +17731,15 @@ position: relative;
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-.slide-content .title {
+.slide-content .title  {
   font-size: 88px;
   line-height: 85px;
   font-weight: 700;
-  max-width: 57%;
+  max-width: 100% !important;
 }
 @media (max-width: 1599.98px) {
   .slide-content .title {
-    max-width: 85%;
+    max-width: 100% !important;
   }
 }
 @media (max-width: 767.98px) {
@@ -18238,6 +18240,12 @@ position: relative;
 /*----------------------------------------*/
 .banner-item {
   padding: 40px 35px;
+  height: 280px;
+}
+
+.banner-item2 {
+  padding: 40px 35px;
+  height: 450px;
 }
 .banner-content .short-desc {
   font-weight: 300;
@@ -18345,16 +18353,7 @@ position: relative;
   overflow: hidden;
 }
 .banner-style-3 .banner-content:before {
-  color: #0d2d62;
-  content: attr(data-count);
-  display: block;
-  position: absolute;
-  bottom: -20px;
-  right: -10px;
-  font-size: 120px;
-  font-weight: 900;
-  line-height: 1;
-  z-index: -1;
+ 
 }
 .banner-style-3 .banner-content.different-data-color:before {
   color: #ff6e2b;
@@ -20690,11 +20689,13 @@ position: relative;
   display: block;
 }
 .lg-logo{
-  width: 100px;
+  width: 170px;
+  height: 160px;
   vertical-align: middle;
 }
 .sm-logo{
-  width: 80px;
+  width: 120px;
+  height: 80px;
 }
 
 /*--------------------------------------------------------------
@@ -21028,7 +21029,6 @@ position: relative;
 .director_icon img {
   width: 100%;
   background-color:#FEEC37 ;
-  padding: 10px;
   border-bottom: 2px solid #ddd;
 }
 
@@ -21144,4 +21144,53 @@ button:hover {
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+@media (min-width: 769px) {
+  .header-top p{
+    position: relative;
+    left: 250px;
+   font-family: "Rajdhani", sans-serif;
+    font-size: 30px;
+   color:#198754 ;
+   line-height: 1;
+   margin-bottom: 0;
+   font-weight: 900;
+   width: 100%;
+  
+  } 
+}
 
+.contact-container {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 300px;
+  margin-top: 20px;
+}
+.contact-container h2 {
+  margin-bottom: 20px;
+}
+.email-link {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  background: #FF5E13;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.email-link:hover {
+  background: #2B9D6A;
+  color: #f0f0f0;
+}
+
+
+
+
+@media (max-width: 1023px) {
+  .sticky {
+    display: none;
+  }
+}
