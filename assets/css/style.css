@@ -24676,3 +24676,99 @@ width: 100%;
 height: 480px;
 }
 
+.customer-care-section {
+  padding: 60px 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+
+.customer-care-heading h2 {
+  font-size: 32px;
+  color: #FF5E13;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.customer-care-heading p {
+  font-size: 18px;
+  color: #00225A;
+  margin-bottom: 40px;
+}
+
+
+.customer-care-content {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+
+.contact-box {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+
+.contact-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+.icon i {
+  font-size: 60px;
+  color: #198754;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.contact-box:hover .icon i {
+  transform: scale(1.1);
+}
+
+
+.contact-box h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.contact-box p {
+  color: #777;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contact-box p a {
+  color: #FF5E13;
+  text-decoration: none;
+}
+
+.contact-box p a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .customer-care-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-box {
+      width: 90%;
+  }
+
+  .icon i {
+      font-size: 50px;
+  }
+}
