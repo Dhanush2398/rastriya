@@ -24568,7 +24568,7 @@ button:hover {
 
 .loader-line {
   width: 100%;
-  height: 43px;
+  height: 23px;
   position: relative;
   overflow: hidden;
   background-color: #FF5E13;
@@ -24582,12 +24582,12 @@ button:hover {
   content: "";
   position: absolute;
   /* left: -50%; */
-  height: 43px;
+  height: 23px;
   width: 100%;
   background-color: #2B9D6A;
-  -webkit-animation: lineAnim 2s linear infinite;
-  -moz-animation: lineAnim 2s linear infinite;
-  animation: lineAnim 2s linear infinite;
+  -webkit-animation: lineAnim 5s linear infinite;
+  -moz-animation: lineAnim 5s linear infinite;
+  animation: lineAnim 5s linear infinite;
   /* -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px; */
