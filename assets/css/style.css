@@ -24561,6 +24561,62 @@ button:hover {
   transform: translateY(3px);
 }
 
+@media screen and (max-width: 768px) {
+  .popup {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  .popup h1 {
+    font-size: 28px;
+  }
+
+  .popup h3.festival-name {
+    font-size: 36px;
+  }
+
+  .popup p {
+    font-size: 16px;
+  }
+
+  .popup button {
+    padding: 12px 30px;
+    font-size: 16px;
+  }
+
+  .popup img {
+    max-width: 100px;
+  }
+}
+
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .popup {
+    width: 80%;
+    padding: 35px 25px;
+  }
+
+  .popup h1 {
+    font-size: 30px;
+  }
+
+  .popup h3.festival-name {
+    font-size: 42px;
+  }
+
+  .popup p {
+    font-size: 17px;
+  }
+
+  .popup button {
+    padding: 14px 35px;
+    font-size: 17px;
+  }
+
+  .popup img {
+    max-width: 110px;
+  }
+}
 .sticky .lg-logo {
   height: 80px !important;
   width: 90px !important;
