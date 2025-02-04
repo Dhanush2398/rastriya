@@ -24772,3 +24772,11 @@ height: 480px;
       font-size: 50px;
   }
 }
+
+
+@media (max-width: 769px) {
+  .contact-img {
+   position: relative;
+   right: 30px;
+  }
+}
