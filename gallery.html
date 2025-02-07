@@ -297,90 +297,80 @@
         <!-- Main Header Area End Here -->
             <div class="text-end g-translate "><div id="google_translate_element"></div></div>
 
-            <section>
-                <div class="container">
-                <h1 style="text-align: center; margin-bottom: 2rem; margin-top: 2rem;">Our Beautiful Gallery</h1>
-                <div class="gallery">
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/1.jpeg" alt="Gallery Image 1">
+            <style>
+               .pic .row {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+                }
+                .pic .column {
+                    grid-column: span 3;
+                    width: auto;
+                    height: 100%;
+                    overflow: hidden;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+                .pic .column img {
+                    width: 100%;
+                    height: auto;
+                    transition: transform 0.3s ease-in-out;
+                    }
+
+                .pic .column img:hover {
+                     transform: scale(1.2);
+                     cursor: pointer;
+                    }
+
+                .pic .column img.touch-active {
+                  transform: scale(1.2);
+                  }
+            </style>
+             <h1 style="text-align: center; margin-bottom: 2rem; margin-top: 2rem;">Our Beautiful Gallery</h1>
+            <div class="container-fluid">
+                <div class="heading pt-4 ">
+                </div>
+                <div class="pic">
+                <div class="row py-5 px-lg-5 px-sm-0">
+                    <div class="column">
+                        <img src="assets/images/rgns/1.jpeg" class="h:scale-1" alt="" srcset="">
+                        <img src="assets/images/rgns/2.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/3.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/4.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/23.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/24.jpeg" alt="" srcset="">
                     </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/2.jpeg" alt="Gallery Image 2">
+                    <div class="column">
+                        <img src="assets/images/rgns/7.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/8.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/9.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/10.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/19.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/20.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/24.jpeg" alt="" srcset="">
                     </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/3.jpeg" alt="Gallery Image 3">
+                    <div class="column">
+                        <img src="assets/images/rgns/5.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/6.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/11.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/12.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/17.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/18.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/21.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/22.jpeg" alt="" srcset="">
                     </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/4.jpeg" alt="Gallery Image 4">
+                    <div class="column">
+                        <img src="assets/images/rgns/13.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/14.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/15.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/16.jpeg" alt="" srcset="">
+                        <img src="assets/images/rgns/25.jpeg" alt="" srcset="">
                     </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/5.jpeg" alt="Gallery Image 5">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/6.jpeg" alt="Gallery Image 6">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/7.jpeg" alt="Gallery Image 7">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/8.jpeg" alt="Gallery Image 8">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/9.jpeg" alt="Gallery Image 9">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/10.jpeg" alt="Gallery Image 10">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/11.jpeg" alt="Gallery Image 11">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/12.jpeg" alt="Gallery Image 12">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/13.jpeg" alt="Gallery Image 13">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/14.jpeg" alt="Gallery Image 14">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/15.jpeg" alt="Gallery Image 15">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/16.jpeg" alt="Gallery Image 16">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/17.jpeg" alt="Gallery Image 17">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/18.jpeg" alt="Gallery Image 18">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/19.jpeg" alt="Gallery Image 19">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/20.jpeg" alt="Gallery Image 20">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/21.jpeg" alt="Gallery Image 21">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/22.jpeg" alt="Gallery Image 22">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/23.jpeg" alt="Gallery Image 23">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/24.jpeg" alt="Gallery Image 24">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="assets/images/rgns/25.jpeg" alt="Gallery Image 25">
-                    </div>
-                
                 </div>
             </div>
+            </div>
 
-            </section>
+            
         <div class="contact-area pt-140">
             <div class="container">
                 <div class="row">
