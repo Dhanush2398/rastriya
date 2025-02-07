@@ -24631,19 +24631,29 @@ button:hover {
   border-radius: 20px; */
 }
 
-.loader-line:before {
+.loader-line:before,
+.loader-line:after {
   content: "";
   position: absolute;
   /* left: -50%; */
   height: 23px;
   width: 100%;
-  background-color: #2B9D6A;
-  -webkit-animation: lineAnim 5s linear infinite;
-  -moz-animation: lineAnim 5s linear infinite;
-  animation: lineAnim 5s linear infinite;
+  -webkit-animation: lineAnim 10s linear infinite;
+  -moz-animation: lineAnim 10s linear infinite;
+  animation: lineAnim 10s linear infinite;
   /* -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   border-radius: 20px; */
+}
+
+
+.loader-line:before {
+  background-color: #2B9D6A;
+}
+
+.loader-line:after {
+  background-color: #00225A; 
+  animation-delay: 4s; 
 }
 
 @keyframes lineAnim {
