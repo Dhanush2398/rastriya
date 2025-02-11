@@ -294,58 +294,243 @@
 
             <div class="global-overlay"></div>
         </header>
-        <!-- Main Header Area End Here -->
-        <div class="slider-area">
-            <div class="text-end g-translate "><div id="google_translate_element"></div></div>
-     
-        <div class="contact-form-area pt-130 pb-115">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h2 class="contact-form-title mb-3">Leave a Message</h2>
-                        
-                        <form id="contact-form" class="contact-form pt-10"
-                            action="">
-                            <div class="group-input pb-4">
-                                <input type="text" name="con_name" id="con_name" placeholder="Your Name*"
-                                    class="input-field me-6">
-                                <input type="text" name="con_email" id="con_email" placeholder="Your Email*"
-                                    class="input-field mt-6 mt-sm-0">
-                            </div>
-                             <div class="group-input">
-                                <input type="text" name="con_name" id="con_name" placeholder="Your Phone Number*"
-                                    class="input-field me-6">
-                                <input type="text" name="con_email" id="con_email" placeholder="Your Subject*"
-                                    class="input-field mt-6 mt-sm-0">
-                            </div>
-                            <div class="form-field mt-6">
-                                <textarea name="con_message" id="con_message" placeholder="Message"
-                                    class="textarea-field"></textarea>
-                            </div>
-                            <div class="button-wrap mt-8">
-                                <button type="submit" value="submit"
-                                    class="btn btn-custom btn-secondary btn-primary-hover" name="submit">Submit</button>
-                                <p class="form-messege mt-5 mb-0"></p>
-                            </div>
-                        </form>
+
+        <div class="step">
+            <h2>Comments & Suggestions</h2>
+            <h3 class="main_question"><i class="arrow_right"></i>Please fill with your personal data</h3>
+            <div class="form-group add_top_30">
+                <label for="name">First and Last Name</label>
+                <input type="text" name="name" id="name" class="form-control required" onchange="getVals(this, 'name_field');">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" class="form-control required" onchange="getVals(this, 'email_field');">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="text" name="phone" id="phone" class="form-control required">
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-4">
+                    <label for="age">Age</label>
+                    <div class="form-group radio_input">
+                        <input type="text" name="age" id="age" class="form-control required">
                     </div>
-                    <div class="col-lg-6 ps-lg-10" style="margin-top: 60px;">
-                        <div class="map-with-pattern pt-9">
-                            <div class="responsive-map-container">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.786827156464!2d77.5531658!3d12.985482099999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3d7bacc64c8b%3A0xf22c7d08890c5195!2sRastriya%20Gruha%20Nirmana%20Sahakara%20Sangha!5e0!3m2!1sen!2sin!4v1738429887620!5m2!1sen!2sin"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                            </div>
-                            <div class="contact-container">
-                                <h2>Contact Us</h2>
-                                <a href="#" class="email-link">President@rgnss.com</a>
-                                <a href="#" class="email-link">Manager@rgnss.com</a>
-                                <a href="#" class="email-link">customercare@rgnss.com</a>
-                            </div>
-                        </div>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-6 col-8">
+                    <div class="form-group radio_input">
+                        <label class="container_radio mr-3">Male
+                            <input type="radio" name="gender" value="Male" class="required">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container_radio">Female
+                            <input type="radio" name="gender" value="Female" class="required">
+                            <span class="checkmark"></span>
+                        </label>
                     </div>
                 </div>
             </div>
+            <div class="form-group add_top_30">
+                <label for="name">Who was your Sales Representative?</label>
+                <input type="text" name="representative" id="representative" class="form-control required">
+            </div>
+            <div class="form-group">
+                <label for="email">Who was your Driver?</label>
+                <input type="text" name="driver" id="driver" class="form-control required">
+            </div>
+            <div class="form-group add_top_30">
+                <label for="name">Feedbacks & Suggestions</label>
+                <textarea rows="4" cols="50" type="text" name="suggestion" id="suggestion" class="form-control required"></textarea>
+            </div>
+            <!-- /row-->
         </div>
-        
+        <!-- /step-->
+        <div id="bottom-wizard">
+        <button type="submit" name="process" class="submit">Submit</button>
+      </div>
+         <style>
+           
+.step {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 600px; 
+    margin: 0 auto; 
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}
+
+.step h2 {
+    font-size: 28px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.step h3.main_question {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+
+.step .form-group {
+    margin-bottom: 20px;
+}
+
+.step label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.step .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+}
+
+.step textarea.form-control {
+    resize: vertical;
+}
+
+
+.step .container_radio {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.step .container_radio input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+
+@media (max-width: 768px) {
+    .step h2 {
+        font-size: 24px;
+    }
+
+    .step h3.main_question {
+        font-size: 16px;
+    }
+
+    .step .form-group label {
+        font-size: 14px;
+    }
+
+    .step .form-group .form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .step .radio_input {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .step .container_radio {
+        margin-right: 15px;
+        font-size: 14px;
+    }
+
+    .step .row {
+        flex-direction: column;
+    }
+
+    .step .col-lg-3, .step .col-md-3, .step .col-sm-3, .step .col-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .step .col-lg-5, .step .col-md-5, .step .col-sm-6, .step .col-8 {
+        width: 100%;
+    }
+
+    .step textarea.form-control {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+   
+    .step .submit-btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .step h2 {
+        font-size: 20px;
+    }
+
+    .step h3.main_question {
+        font-size: 14px;
+    }
+
+    .step .form-group label {
+        font-size: 12px;
+    }
+
+    .step .form-group .form-control {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .step .container_radio {
+        font-size: 12px;
+        margin-right: 10px;
+    }
+
+    .step textarea.form-control {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .step .row {
+        flex-direction: column;
+    }
+
+    .step .col-lg-3, .step .col-md-3, .step .col-sm-3, .step .col-4 {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .step .col-lg-5, .step .col-md-5, .step .col-sm-6, .step .col-8 {
+        width: 100%;
+    }
+}
+
+#bottom-wizard {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin-top: 20px; 
+    margin-bottom: 20px;
+}
+
+#bottom-wizard .submit {
+    padding: 12px 25px; 
+    font-size: 16px; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+         </style>
+       
         <!-- Begin Newsletter Area -->
         <div class="newsletter-area pt-9 pb-8" data-bg-color="#7AB2D3">
             <div class="container">
@@ -374,7 +559,6 @@
             </div>
         </div>
         <!-- Newsletter Area End Here -->
-
 
         <!-- Begin Footer Area -->
         <div class="footer-area">
@@ -481,17 +665,17 @@
         </div>
         <!-- Footer Area End Here -->
 
-       <!-- Back to Top Icon -->
-       <a href="#top" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-       </a>
-       <!-- Scroll To Top End Here -->
-
-       </div>
-      <!-- WhatsApp  Button -->
-    <a href="https://wa.me/9071993399" target="_blank" class="whatsapp-button">
-         <i class="fab fa-whatsapp"></i>
-    </a>
+         <!-- Back to Top Icon -->
+         <a href="#top" class="back-to-top">
+            <i class="fas fa-arrow-up"></i>
+           </a>
+           <!-- Scroll To Top End Here -->
+   
+           </div>
+          <!-- WhatsApp  Button -->
+        <a href="https://wa.me/9071993399" target="_blank" class="whatsapp-button">
+             <i class="fab fa-whatsapp"></i>
+        </a>
 
     <!-- Global Vendor, plugins JS -->
 
